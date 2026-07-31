@@ -1,0 +1,30 @@
+const express = require("express");
+const app = express();
+
+app.get("/",(req,res)=>{
+    res.send("Request is Done!");
+});
+
+app.get("/login",(req,res)=>{
+    res.send("Login request is Send !");
+});
+
+app.post("/SignUp",(req,res)=>{
+    res.send(req.params.body);
+});
+
+app.put("/update",(req,res)=>{
+    res.send("Update Request is Send !");
+});
+
+app.delete("/delete",(req,res)=>{
+    res.send("Delete Request is Send !");
+});
+
+app.listen(5000,()=>{
+    console.log("Server is running on port 5000");
+})
+
+
+<Profile Name="Bhagavathi priya" Role="Software Development Engineer" Email_Id="priya@gmail.com"/>
+        
